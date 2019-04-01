@@ -1,24 +1,24 @@
 Warning: Google App Engine Java 7 runtime is deprecated.
 Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
-Mar 30, 2019 7:31:06 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
-INFO: Overwriting system property key 'java.util.logging.config.file', value '/Users/roldan/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/roldan/Documents/dimension/android/nanodegree/ud867/FinalProject/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
-Mar 30, 2019 7:31:06 PM com.google.apphosting.utils.jetty.JettyLogger info
+Apr 01, 2019 10:38:45 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value '/Users/roldan/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/roldan/Desktop/builditbigger/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
+Apr 01, 2019 10:38:45 AM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
-Mar 31, 2019 1:31:06 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
-WARNING: Your working directory, (/Users/roldan/Documents/dimension/android/nanodegree/ud867/FinalProject) is not equal to your 
-web application root (/Users/roldan/Documents/dimension/android/nanodegree/ud867/FinalProject/backend/build/exploded-backend)
+Apr 01, 2019 4:38:45 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (/Users/roldan/Desktop/builditbigger) is not equal to your 
+web application root (/Users/roldan/Desktop/builditbigger/backend/build/exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-Mar 31, 2019 1:31:07 AM com.google.apphosting.utils.jetty.JettyLogger info
+Apr 01, 2019 4:38:46 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: jetty-6.1.x
-Mar 31, 2019 1:31:10 AM com.google.apphosting.utils.jetty.JettyLogger info
+Apr 01, 2019 4:38:48 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Started SelectChannelConnector@localhost:8080
-Mar 31, 2019 1:31:10 AM com.google.appengine.tools.development.AbstractModule startup
+Apr 01, 2019 4:38:48 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-Mar 31, 2019 1:31:10 AM com.google.appengine.tools.development.AbstractModule startup
+Apr 01, 2019 4:38:48 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-Mar 30, 2019 7:31:10 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+Apr 01, 2019 10:38:48 AM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
-Mar 30, 2019 7:31:12 PM com.google.appengine.tools.development.AbstractModule shutdown
-Shutting down.
+Apr 01, 2019 10:39:39 AM com.google.appengine.tools.development.AbstractModule shutdown
 INFO: Shutting down module instance default
+Shutting down.
