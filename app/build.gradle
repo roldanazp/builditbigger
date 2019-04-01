@@ -70,19 +70,12 @@ dependencies {
 
 }
 
-task testMe{
-    mustRunAfter ':backend:appengineStart'
-    doLast{
-        println 'test me!!!'
-    }
-}
-
-
+connectedCheck.mustRunAfter ':backend:appengineStart'
 task testServer{
     dependsOn ':backend:appengineStart'
     dependsOn 'connectedCheck'
     finalizedBy ':backend:appengineStop'
     doLast{
-        println 'Hola mundo'
+        println 'TEST FINISH!'
     }
 }

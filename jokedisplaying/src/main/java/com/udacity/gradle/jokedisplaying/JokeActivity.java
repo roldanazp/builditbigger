@@ -10,10 +10,11 @@ public class JokeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_joke);
-        if(getIntent().hasExtra(JOKE_EXTRA)){
-            String joke = getIntent().getStringExtra(JOKE_EXTRA);
-            TextView jokeView = findViewById(R.id.joke);
-            jokeView.setText(joke);
+        TextView jokeView = findViewById(R.id.joke);
+        if(getIntent().hasExtra(JOKE_EXTRA) && getIntent().getStringExtra(JOKE_EXTRA)!=null){
+            jokeView.setText(getIntent().getStringExtra(JOKE_EXTRA));
+        }else{
+            jokeView.setText(R.string.missing_joke);
         }
     }
 }

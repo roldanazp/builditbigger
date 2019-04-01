@@ -1,16 +1,12 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.util.Pair;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
-import com.udacity.gradle.jokedisplaying.JokeActivity;
 
 import java.io.IOException;
 
@@ -22,6 +18,7 @@ class EndpointsAsyncTask extends AsyncTask<EndpointsAsyncTask.Callback, Void, St
 
     @Override
     protected String doInBackground(Callback... params) {
+
         if(myApiService == null) {  // Only do this once
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
@@ -45,8 +42,10 @@ class EndpointsAsyncTask extends AsyncTask<EndpointsAsyncTask.Callback, Void, St
         try {
             return myApiService.getJoke().execute().getJoke();
         } catch (IOException e) {
-            return e.getMessage();
+            e.printStackTrace();
+            return null;
         }
+
     }
 
     @Override
